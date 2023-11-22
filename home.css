@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;1,300&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&display=swap");
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  max-width: 1031px;
+  margin: auto;
+}
+
+.header {
+  background-image: url(images/Poster.png);
+  height: 65vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.header nav .logo {
+  display: flex;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 24px;
+  align-items: center;
+  text-decoration: none;
+  gap: 1.5rem;
+  color: white;
+}
+.header nav .search {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 2px solid var(--gray-300, #d1d5db);
+  display: flex;
+  width: 525px;
+  height: 20px;
+  top: 22px;
+  left: 493px;
+  justify-content: space-between;
+}
+.header nav .search input {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: white;
+  width: 100%;
+  font-weight: 400;
+}
+.header nav .search input::-moz-placeholder {
+  color: white;
+}
+.header nav .search input::placeholder {
+  color: white;
+}
+.header nav .sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.header nav .sign .btn {
+  color: white;
+  background: inherit;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+}
+.header nav .sign .sign-btn {
+  background-color: #BE123C;
+  height: 36px;
+  width: 36px;
+  border: 0;
+  border-radius: 30px;
+  outline: inherit;
+  cursor: pointer;
+}
+.header .hero {
+  color: white;
+  height: inherit;
+  display: flex;
+}
+.header .hero-text {
+  width: 100%;
+  max-width: 404px;
+  height: 300px;
+}
+.header .hero-text h1 {
+  line-height: 56px;
+  margin: 0;
+}
+.header .hero-text p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 302px;
+}
+.header .hero-text .btn {
+  padding: 6px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  border: 0;
+  gap: 8px;
+  color: inherit;
+  background-color: #BE123C;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rating {
+  display: flex;
+  font-size: 12px;
+  gap: 80px;
+  margin: 1rem 0;
+}
+.rating-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  color: #BE123C;
+  gap: 10px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.chevron-right {
+  margin-right: 50px;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.chevron-left {
+  display: flex;
+  margin-left: 50px;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.featured {
+  display: flex;
+  align-items: center;
+}
+.featured .featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.featured .featured-header h2 {
+  font-family: "DM Sans";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 47px;
+}
+.featured .featured-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.featured .featured-list-item .bg {
+  height: 370px;
+  background-image: url(images/Poster\ \(1\).png);
+  display: flex;
+}
+.featured .featured-list-item .text {
+  margin-top: 10px;
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9CA3AF;
+}
+.featured .featured-list-item .title {
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #111827;
+  margin-top: 10px;
+}
+.featured .featured-list-item p {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9CA3AF;
+}
+.featured .featured-list-item .batman {
+  background-image: url(images/batman.png);
+  height: 370px;
+  justify-content: flex-end;
+  display: flex;
+}
+.featured .featured-list-item .spider-man {
+  background-image: url(images/spiderman.png);
+  height: 370px;
+}
+.featured .featured-list-item .spider-man .flex {
+  justify-content: flex-end;
+}
+.featured .featured-list-item .dunkirk {
+  background-image: url(images/dunkirk.png);
+  height: 370px;
+}
+.featured .featured-list-item .dunkirk .flex {
+  justify-content: flex-end;
+}
+.featured .featured-list .flex {
+  display: flex;
+  gap: 55px;
+}
+.featured .featured-list .flex .badge {
+  background-color: rgba(243, 244, 246, 0.5019607843);
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 3px 8px;
+  height: 16px;
+  border-radius: 10px;
+  font-family: "DM Sans";
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.featured .featured-list .flex .heart {
+  background-color: rgba(243, 244, 246, 0.5019607843);
+  width: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px;
+  padding: 3px;
+  height: 19px;
+  border: 2px;
+  border-radius: 20px;
+}
+
+.new-arrival {
+  display: flex;
+  align-items: center;
+}
+.new-arrival .new-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 10px;
+}
+.new-arrival .text {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9CA3AF;
+  margin-top: 10px;
+}
+.new-arrival p {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #9CA3AF;
+}
+.new-arrival .new-arrival-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.new-arrival .new-arrival-list-item .flex {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  height: 5px;
+  padding: 10px;
+}
+.new-arrival .new-arrival-list-item .flex .heart {
+  background-color: rgba(243, 244, 246, 0.5019607843);
+  width: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  height: 19px;
+  border-radius: 20px;
+}
+.new-arrival .new-arrival-list-item .dune {
+  background-image: url(images/dunc.png);
+  display: flex;
+  height: 370px;
+  justify-content: end;
+}
+.new-arrival .new-arrival-list-item .no-time {
+  background-image: url(images/no\ time\ to\ die.png);
+  display: flex;
+  height: 370px;
+}
+.new-arrival .new-arrival-list-item .shang-chi {
+  background-image: url(images/shang-chi.png);
+  display: flex;
+  height: 370px;
+}
+.new-arrival .new-arrival-list-item .breathe {
+  background-image: url(images/dont-breath.png);
+  display: flex;
+  height: 370px;
+}
+
+.videos {
+  display: flex;
+  align-items: center;
+}
+.videos .video-header {
+  display: flex;
+  justify-content: space-between;
+}
+.videos .video-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.videos .video-list img {
+  width: 325px;
+}
+
+.cast {
+  display: flex;
+  align-items: center;
+}
+.cast-header {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.cast .cast-name {
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #111827;
+  padding-top: 12px;
+}
+.cast .cast-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.cast .cast-list-items .keanu {
+  background-image: url(images/keanu.png);
+  height: 370px;
+}
+.cast .cast-list-items .ryan {
+  background-image: url(images/ryan.png);
+  height: 370px;
+}
+.cast .cast-list-items .timothee {
+  background-image: url(images/timothee.png);
+  height: 370px;
+}
+.cast .cast-list-items .chloe {
+  background-image: url(images/chloe.png);
+  height: 370px;
+}
+
+.footer {
+  display: flex;
+  margin-top: 150px;
+}
+.footer .social {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .social img {
+  cursor: pointer;
+}
+.footer .terms {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.footer .terms a {
+  color: var(--gray-900, #111827);
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+}
+.footer footer {
+  display: flex;
+  justify-content: center;
+  color: var(--gray-500, #6B7280);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+}/*# sourceMappingURL=home.css.map */
